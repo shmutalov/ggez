@@ -1,4 +1,8 @@
-CARGO_FLAGS += --release
+BUILD_CFG = release
+CARGO_FLAGS += --$(BUILD_CFG)
+
+resources:
+  cp -R resources target/$(BUILD_CFG)/
 
 clean:
   cargo clean $(CARGO_FLAGS)
