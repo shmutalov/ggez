@@ -13,6 +13,6 @@ build:
 test:
   cargo test $(CARGO_FLAGS)
   
-build_and_test: clean build test
+build_and_test: clean build resources test
 
-.PHONY: clean build test
+.PHONY: clean build resources test
